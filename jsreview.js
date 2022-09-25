@@ -120,7 +120,7 @@ for (tom = 1; tom < 101; tom +=1) {
     }
 }
 
-// **************come back to this one to see if you can make it into an interger.
+
 
 //C Give ME Five 
 
@@ -135,7 +135,7 @@ for (let i = 1; i<=100; i++) {
     else 
         console.log(i)
 }
-// *************** come back and make this one an interger
+
 
 // D. Savings Account 
 
