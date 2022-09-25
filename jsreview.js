@@ -1,3 +1,7 @@
+//Yay!! Your file runs from top to bottom when I fixed a typo on line 99
+//funny variable names
+//function sections B-E, I would return a value instead of console.log() then you can just console.log() the called function to check your work. 
+
 // Part One
 // // A. Q + A
 // How do we assign a value to a variable?
@@ -93,7 +97,7 @@ if (ageOfTeen >= 16) {
 // A The Basics 
 
 let crapes = 0
-for (crapest = 0; crapes < 11; crapes +=1)
+for (crapes = 0; crapes < 11; crapes +=1)
     console.log(crapes)
 
 let hashbrowns = 10
@@ -186,6 +190,9 @@ for ( let i=1; i<= 100; ++i) {
 
  console.log(ourClass[2]);
  
+//you can access the last value in an array like this too!
+//ourClass[ourClass.length - 1] = 'Octocat';
+
  ourClass[4] = "Octocat"
 
  console.log(ourClass);
@@ -296,7 +303,9 @@ calculateCube(3)
 // D. isVowel
 
 let isVowel = function(letter) {
-    
+    //you can create a variable like this
+    //const lower = letter.toLowerCase()
+    //this use lower in your conditions to reduce typing
     if (letter.toLowerCase() === "a") {
         console.log(true)
     }else if (letter.toLowerCase() === "e"){
