@@ -70,3 +70,379 @@ if (animal === "cow"){
 }
 // Change your code so that if the variable animalis anything other than a cow, it will print "Hey! You're not a cow."
 // Commit
+
+// E. Driver's Ed
+// Make a variable that holds a person's age; be semantic
+let ageOfTeen = 17
+// Write code that will print out "Here are the keys!", if the age is 16 years or 
+// older, or, if the age is younger than 16, a message should print "Sorry, you're too young."
+if (ageOfTeen >= 16) {
+    console.log("Here are the Keys!")
+}else if 
+    (ageOfTeen < 16) {
+        console.log("Sorry, you're too young.")
+    }
+
+    // II. Loops
+    // Remember: USE letwhen you initialize your for loops!
+    
+    // This is GOOD: for(let i = 0; i < 100; i++)
+    
+    // This is NO GOOD: for(i = 0; i < 100; i++)
+    
+// A The Basics 
+
+let crapes = 0
+for (crapest = 0; crapes < 11; crapes +=1)
+    console.log(crapes)
+
+let hashbrowns = 10
+for (hashbrowns = 10; hashbrowns < 401; hashbrowns +=1)
+    console.log(hashbrowns)
+
+
+let third = 12
+for (third = 12; third < 4000; third +=3)
+    console.log(third)
+
+    // B. Get Even
+
+let tomatoes = 1
+for (tomatoes = 1; tomatoes < 101; tomatoes +=1)
+    console.log(tomatoes)
+
+let tom = 1
+for (tom = 1; tom < 101; tom +=1) {
+    if (tom % 2 == 0) {
+        console.log(`${tom} <-- is an even number`);
+    }else{
+         console.log(tom)
+    }
+}
+
+// **************come back to this one to see if you can make it into an interger.
+
+//C Give ME Five 
+
+for (let i = 1; i<=100; i++) {
+    if (i % 5 === 0 && i % 3 === 0) {
+        console.log(i + ` I found a ${i} High Five! Three is a crowd.`)
+    } else if (i % 5 === 0) {
+        console.log(i + ` I found a ${i} High Five!`)
+    } else if (i % 3 === 0) {
+        console.log(i +` I found a ${i} Three is a Crowd!`)
+    }
+    else 
+        console.log(i)
+}
+// *************** come back and make this one an interger
+
+// D. Savings Account 
+
+let bankaccount = 0
+for ( let i=1; i<= 10; ++i) {
+        bankaccount += i;
+    }
+    console.log(bankaccount)
+
+
+    let bonusbaby = 0
+for ( let i=1; i<= 100; ++i) {
+        bonusbaby += i * 2;
+    }
+    console.log(bonusbaby)
+
+// PART THREE Arrays & Control Flow
+
+// A. Talk About it:
+
+// Q. What are the things in an array called?  
+// A. elements
+
+// Q. Do Arrays guarantee those things will be in order?
+// A. Nope
+
+// Q. What real-life thing could you model with an array?
+ //A. a christmas gift list for my family members.
+
+ // B. Easy Does it:
+ 
+ let quotes = ["'My Life is My Message'- Mahatma Gandhi", "'Never Regret Anything That Made you Smile'-Mark Twain", "'Life isn't about finding yourself. Life is about creating yourself.'- George Bernard Shaw"]
+
+ //C. Accessing Elements
+ console.log(quotes)
+
+ const randomThings = [1, 10, "Hello", true]
+
+ console.log(randomThings[0]);
+
+ randomThings[2] = "World"
+
+ console.log(randomThings);
+
+ // D. Change Values
+
+ const ourClass = ["Salty", "Zoom", "Sardine", "Slack", "Github",]
+
+ console.log(ourClass[2]);
+ 
+ ourClass[4] = "Octocat"
+
+ console.log(ourClass);
+ ourClass.push("Cloud City")
+ console.log(ourClass)
+
+// E. MIx it Up
+
+const myArray = [5, 10, 500, 20]
+
+myArray.push("Egon", "NancyDrew")
+myArray.shift()
+myArray.unshift("Bob Marley")
+myArray.pop()
+console.log(myArray)
+myArray.reverse()
+console.log(myArray)
+
+// I'm not sure I did this right as I think that myArray.reverse() is different that myArray.prototype.reverse() or maybe its Array.prototype.reverse() I tried both of those and it returned errors but the documentation from mozilla makes me thing maybe I'm wrong. but if I'm correct than yes it flipped it around. 
+
+// F. Biggie Smalls
+
+let dogs = 4
+
+if (dogs < 100) {
+    console.log("little number")
+}else{
+    console.log("Big Number")
+}
+
+// G. Monkey in the Middle
+
+let monkey = 7
+
+if (monkey < 5) {
+    console.log("little number")
+}else if (monkey > 10) {
+    console.log("Big Number")
+} else
+    console.log("monkey")
+
+// H. What's in your Closet
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right sock",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hat",
+    "marshmallow peeps"
+  ];
+  
+  // Thom's closet is more complicated. Check out this nested data structure!!
+  const thomsCloset = [
+    [
+      // These are Thom's shirts
+      "grey button-up",
+      "dark grey button-up",
+      "light blue button-up",
+      "blue button-up",
+    ],[
+      // These are Thom's pants
+      "grey jeans",
+      "jeans",
+      "PJs"
+    ],[
+      // Thom's accessories
+      "wool mittens",
+      "wool scarf",
+      "raybans"
+    ]
+  ];
+
+  console.log("Kristyn is rocking that " + kristynsCloset[2] + " Today!")
+
+  kristynsCloset.splice(6, 0, "raybans")
+console.log(kristynsCloset)
+kristynsCloset.splice(5, 1, "stained knit hat")
+console.log(kristynsCloset)
+
+console.log(`Thom is looking fierce in a  ${thomsCloset[0][0]}, ${thomsCloset[1][1]}, and a ${thomsCloset[2][1]}.`)
+
+thomsCloset[1][2] = "Footie Pajamas";
+console.log(thomsCloset)
+
+
+// Part IV Functions
+
+// A. PrintGreeting
+
+// Its a freebee :)
+
+// B. printCool
+
+let printCool = function(name) {
+        console.log(`${name} is cool`);
+    }
+    printCool("Rachael");
+
+//C. CalculateCube
+
+let calculateCube = function(number) {
+    console.log(number ** 3)
+}
+calculateCube(3)
+
+// D. isVowel
+
+let isVowel = function(letter) {
+    
+    if (letter.toLowerCase() === "a") {
+        console.log(true)
+    }else if (letter.toLowerCase() === "e"){
+        console.log(true)
+    }else if (letter.toLowerCase() === "i"){
+            console.log(true)
+        }else if(letter.toLowerCase() === "o"){
+                console.log(true)
+            }else if(letter.toLowerCase() === "u"){
+                    console.log(true)
+                }else if(letter.toLowerCase() === "y"){
+                        console.log(true)
+                    }else
+                    console.log(false)
+
+}
+isVowel("a")
+isVowel("c")
+isVowel("Y")
+
+// E. getTwoLengths
+
+
+let getTwoLengths = function(length1, length2) {
+        length =[length1.length, length2.length]
+        console.log(length)
+}
+
+getTwoLengths("NancyDrew", "EncyclopediaBrown")
+
+
+// F. getMultipleLengths
+
+let getMultipleLengths = function(array) {
+        let almostDone = [];
+        for (let i = 0; i < array.length; i++) {
+            almostDone.push(array[i].length);
+        }
+        return almostDone;
+    }
+    
+    console.log(getMultipleLengths(["NancyDrew", "EncyclopediaBrown", "8", "best friends"]));
+
+// G. maxofThree
+
+
+let maxOfThree = function(numOne, numTwo, numThree) {
+    let max = 0;
+    if (numOne >= numTwo && numOne >= numThree) {
+        max = numOne;
+    } else if (numTwo >= numOne && numTwo >= numThree) {
+        max = numTwo;
+    } else if (numThree >= numOne && numThree >= numTwo) {
+        max = numThree;
+    }
+    return max;
+}
+console.log(maxOfThree(6, 9, 1));
+console.log(maxOfThree(6, 9, 9));
+console.log(maxOfThree(3, 3, 3));
+console.log(maxOfThree(75, 23, 0));
+
+// H. printLongestWord
+
+let printLongestWord = function(arrayOfWords) {
+    let longest = arrayOfWords[0];
+    for (let i =0; i < arrayOfWords.length; i++) {
+        if(arrayOfWords[i].length > longest.length) {
+            longest = arrayOfWords[i]
+        }
+    }
+    return longest
+}
+console.log(printLongestWord(["NancyDrew", "EncyclopediaBrown", "8", "best friends", "administratorship"]));
+
+// Part V Objects
+
+// A. Make a user object
+
+let user = {
+    name: "Kelly McDonald",
+    age: 42,
+    email: "kelly@kyndoo.com",
+    purchased: [],
+};
+
+//B update the user
+
+user.email = "kelly@cipio.ai"
+user.age++;
+console.log(user.age)
+
+//C. adding keys and values 
+user.location = "Foster City"
+console.log(user)
+
+// D. shopaholic!
+user.purchased.push("carbohydrates")
+user.purchased.push("peace of mind")
+user.purchased.push("Merino jodhpurs")
+
+console.log(user)
+
+console.log(user.purchased[2])
+
+// E. Object -within -object
+
+user.friend = {
+    name: "Amy Mink",
+    age: 42,
+    location: "Palm Springs",
+    purchased: [],
+
+};
+
+console.log(user.friend.name)
+console.log(user.friend.location)
+user.friend.age =55;
+console.log(user.friend.age)
+user.friend.purchased.push("The One Ring")
+console.log(user.friend)
+user.friend.purchased.push("a latte")
+console.log(user.friend.purchased[1])
+
+// F. Loops
+
+for (let i = 0; i < user.purchased.length; i++) {
+    console.log(user.purchased[i])
+}
+
+
+for (let i = 0; i < user.friend.purchased.length; i++) {
+    console.log(user.friend.purchased[i])
+}
+
+updateUser = function() {
+    user.age++;
+    user.name =user.name.toUpperCase()
+}
+updateUser()
+console.log(user)
+
+oldAndLoud = function(person) {
+    user.age++;
+    user.name =user.name.toUpperCase()
+}
+
+oldAndLoud(user)
+console.log(user)
